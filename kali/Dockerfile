@@ -2,6 +2,7 @@ FROM kalilinux/kali-rolling
 
 # Update & Install SSH + VNC + dependencies
 RUN apt update && apt install -y \
+    git \
     openssh-server \
     x11vnc \
     xvfb \
@@ -37,6 +38,13 @@ RUN mkdir -p ~/.vnc \
 # Copy entrypoint script
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
+
+# Copy install_tools script
+COPY install_tools.sh /install_tools.sh
+RUN chmod +x /install_tools.sh
+
+# Install additional tools by running install_tools.sh
+RUN /install_tools.sh
 
 EXPOSE 22 5900
 CMD ["/entrypoint.sh"]
