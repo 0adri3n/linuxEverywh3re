@@ -1,6 +1,6 @@
 # linuxEverywh3re
 
-This repository contains Dockerfiles for setting up **Debian**, **Ubuntu**, and **Kali** Docker containers with **SSH** and **VNC** access, along with the **XFCE desktop environment**. These containers are configured to allow remote access via SSH and VNC, with a default root password set to `toor`.
+This repository contains Dockerfiles for setting up **Debian**, **Ubuntu**, and **Kali** Docker containers with **SSH** and **VNC** access, along with the **XFCE desktop environment** and **cyber tools** on **Kali**. These containers are configured to allow remote access via SSH and VNC, with a default root password set to `toor`.
 
 ## 📸 Screenshot
 
