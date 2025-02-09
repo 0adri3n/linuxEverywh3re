@@ -20,17 +20,17 @@ You can either **build** the Docker images locally or **pull** them from the Doc
 
 #### For Debian:
 ```bash
-docker pull image 0adri3n/debian-ssh-vnc:latest.
+docker pull 0adri3n/debian-ssh-vnc:latest.
 ```
 
 #### For Ubuntu:
 ```bash
-docker pull image 0adri3n/ubuntu-ssh-vnc:latest.
+docker pull 0adri3n/ubuntu-ssh-vnc:latest.
 ```
 
 #### For Kali:
 ```bash
-docker pull image 0adri3n/kali-ssh-vnc:latest.
+docker pull 0adri3n/kali-ssh-vnc:latest.
 ```
 
 ## 🔨 Build the images locally
