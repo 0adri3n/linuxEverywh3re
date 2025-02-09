@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  ubuntu:
+    build: ./ubuntu
+    ports:
+      - "2222:22"
+      - "5900:5900"
+    restart: always
+
+  debian:
+    build: ./debian
+    ports:
+      - "2223:22"
+      - "5901:5900"
+    restart: always
+
+  kali:
+    build: ./kali
+    ports:
+      - "2224:22"
+      - "5902:5900"
+    restart: always
