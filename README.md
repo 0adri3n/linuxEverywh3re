@@ -14,7 +14,7 @@ This repository contains Dockerfiles for setting up **Debian**, **Ubuntu**, and 
   
 ## 🚀 Getting Started
 
-You can either **build** the Docker images locally or **pull** them from the Docker Hub (if available). Below are the steps for both options.
+You can either **build** the Docker images locally or **pull** them from the Docker Hub. Below are the steps for both options.
 
 ## 🐳 From Docker Hub
 
