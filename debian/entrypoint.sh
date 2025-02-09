@@ -1,8 +1,12 @@
 #!/bin/bash
-# Start SSH Server
+# Démarrer le serveur SSH
 service ssh start
-# Start VNC Server
+
+# Démarrer le serveur VNC avec XFCE
 Xvfb :1 -screen 0 1024x768x16 &
-x11vnc -display :1 -nopw -forever &
-# Keep container alive
+export DISPLAY=:1
+x11vnc -display :1 -rfbauth /root/.vnc/passwd -forever &
+startxfce4 &
+
+# Garder le conteneur actif
 tail -f /dev/null
